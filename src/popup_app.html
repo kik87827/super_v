@@ -18,7 +18,7 @@
 					</div>
 				</div>
 				<div class="fullpop_contlow">
-					<div class="fullpop_contlow_in">
+					<div class="fullpop_contlow_in type2">
 						<div class="form_app_tb">
 							<div class="form_app_tr">
 								<div class="form_app_cell define_th"><span class="form_app_label">학부모 이름</span></div>
@@ -30,13 +30,26 @@
 								</div>
 							</div>
 							<div class="form_app_tr">
-								<div class="form_app_cell define_th"><span class="form_app_label">학부모<br>휴대폰 번호</span></div>
+								<div class="form_app_cell define_th"><span class="form_app_label">학부모 <br>휴대폰 번호</span></div>
 								<div class="form_app_cell define_td">
 									<div class="inline_block_row">
 										<div class="inline_flex_group">
 											<input type="text" class="form_input" placeholder="휴대폰 번호(-없이 숫자만 입력)">
 											<button type="button" class="btn_inline_box">인증번호</button>
 										</div>
+									</div>
+									<div class="inline_block_row">
+										<div class="inline_flex_group">
+											<div class="form_inline_box">
+												<input type="text" class="form_input" placeholder="인증번호 입력">
+												<div class="form_inline_control_group">
+													<!-- <span class="check_emp_text">2분 34초</span>
+													<button type="button" class="btn_form_reset"><span class="hdtext">리셋</span></button> -->
+												</div>
+											</div>
+											<button type="button" class="btn_inline_box red_emp">인증확인</button>
+										</div>
+										<!-- <div class="warn_para_g d_blue"><p class="warn_para">인증번호가 발송되었습니다</p></div> -->
 									</div>
 									<div class="inline_block_row">
 										<div class="inline_flex_group">
@@ -61,19 +74,23 @@
 											<input type="text" class="form_input" placeholder="자녀 이름 입력">
 										</div>
 										<div class="inline_block_row">
-											<select class="form_select">
-												<option value="0">년</option>
-												<option value="1"></option>
-											</select>
-											<select class="form_select">
-												<option value="0">월</option>
-												<option value="1"></option>
-											</select>
-											<select class="form_select">
-												<option value="0">일</option>
-												<option value="1"></option>
-											</select>
-											<input type="text" class="form_input" placeholder="자녀 나이 자동 입력">
+											<div class="inline_flex_group mb_break">
+												<div class="inline_mb_group">
+													<select class="form_select ready wid_full">
+														<option value="0">년</option>
+														<option value="1">2022</option>
+													</select>
+													<select class="form_select ready wid_30">
+														<option value="0">월</option>
+														<option value="1">1</option>
+													</select>
+													<select class="form_select ready wid_30">
+														<option value="0">일</option>
+														<option value="1">1</option>
+													</select>
+												</div>
+												<input type="text" class="form_input wid_full" placeholder="자녀 나이 자동 입력">
+											</div>
 										</div>
 									</div>
 									<div class="warn_para_g d_red"><p class="warn_para">자녀 이름을 입력해 주세요.</p></div>
@@ -92,7 +109,7 @@
 								</div>
 							</div>
 							<div class="form_app_tr">
-								<div class="form_app_cell define_th"><span class="form_app_label">태블릿<br>케이스/거치대</span></div>
+								<div class="form_app_cell define_th align2"><span class="form_app_label">태블릿<br>케이스/거치대</span></div>
 								<div class="form_app_cell define_td">
 									<div class="choice_product_fxwrap">
 										<div class="choice_product_fxcell">
@@ -111,7 +128,7 @@
 												<div class="choice_product"><img src="./images/product_sample02.png" alt=""></div>
 												<div class="choice_form">
 													<div class="checkbox_design_item">
-														<input type="radio" id="product_02" name="product" class="checkbox_item">
+														<input type="radio" id="product_02" name="product" class="checkbox_item type2">
 														<label for="product_02" class="checkbox_label">이비</label>
 													</div>
 												</div>
@@ -156,7 +173,7 @@
 										</div>
 									</div>
 									<div class="form_agree_else_cell">
-										<a href="#toggle_cont_01" class="btn_box small" name="toggle_control">보기</a>
+										<a href="javascript:;" class="btn_box small" data-toggleTarget ="#toggle_cont_01">보기</a>
 									</div>
 								</div>
 								<div class="warn_para_g d_red"><p class="warn_para">개인정보 수집 및 이용에 동의해 주세요.</p></div>
@@ -166,7 +183,7 @@
 							</div>
 						</div>
 						<div class="btn_formsubmit_wrap">
-							<a href="javascript:;" class="btn_formsubmit"><span class="formsubmit_intext">신청하기</span></a>
+							<a href="javascript:;" class="btn_formsubmit"><span class="formsubmit_intext">무료체험 신청하기</span></a>
 						</div>
 					</div>
 				</div>
@@ -175,7 +192,28 @@
 		<!-- // layer_sample -->
 		
 		<script>
-			dimLayerShow({"target" : "#sample_popup"}); // show
+			$(function(){
+				// 퍼블확인용
+				let url = window.location.href.split('?')[1];
+				let url_2 = url !== undefined ? url.split('#')[0] : null;
+
+				if(url_2 == "message"){
+					$(".warn_para_g").show();
+				}
+
+			})
+
+			dimLayerShow({
+				"target" : "#sample_popup", 
+				openCallback : function(){
+					$(".choice_product_item .checkbox_item").on("click",function(){
+						$(".choice_product_item").removeClass("active");
+						if($(this).prop("checked")){
+							$(this).parents(".choice_product_item").addClass("active");
+						}
+					});
+				}
+			}); // show
 			// dimLayerHide({"target" : "#deptail_pop01"}); // hide
 		</script>
 		

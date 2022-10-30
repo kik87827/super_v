@@ -3,8 +3,16 @@ commonInit();
 
 $(function(){
   dimLayerControl();
+  formCommon();
+  toggleFunc();
 });
 
+function toggleFunc(){
+	$("[data-toggleTarget]").on("click",function(){
+		$($(this).attr("data-toggleTarget")).toggle();
+		console.log($(this).attr("data-toggleTarget"));
+	});
+}
 
 function commonInit() {
     let touchstart = "ontouchstart" in window;
@@ -30,6 +38,16 @@ function commonInit() {
       document.querySelector("html").classList.add(opt);
     }
   }
+
+function formCommon(){
+	$(document).on("change",".form_select",function(){
+		if($(this).find("option")[0].value === 0){
+			$(this).addClass("ready");
+		}else{
+			$(this).removeClass("ready");
+		}
+	});
+}
 
 
   /* layer popup event */
