@@ -854,6 +854,26 @@ textarea {
   color: #313AF8 !important;
 }
 
+.bullet_list {
+  line-height: 1.4;
+  font-size: 12px;
+  text-align: left;
+}
+.bullet_list > li {
+  color: #909090;
+  position: relative;
+  padding-left: 8px;
+}
+.bullet_list > li:before {
+  display: block;
+  content: "";
+  width: 2px;
+  height: 2px;
+  background: #909090;
+  position: absolute;
+  top: 7px;
+  left: 0;
+}
 .checkbox_design_item {
   display: flex;
   align-items: center;
@@ -1141,7 +1161,7 @@ select.form_select:disabled {
   height: 43px;
   font-size: 0;
   line-height: 0;
-  background: url("../images/btn_popupclose.png") no-repeat 50% 50%/15px auto;
+  background: url("../images/btn_popupclose.png") no-repeat 50% 50%/16px auto;
 }
 
 .fullpop_dim {
@@ -1358,10 +1378,10 @@ select.form_select:disabled {
   .fullpop_item {
     padding: 0;
     margin: 0;
-    max-height: 100%;
+    max-height: 100% !important;
     height: 100%;
     width: 100%;
-    max-width: 100%;
+    max-width: 100% !important;
   }
   .fullpop_title_fxwrap {
     border-radius: 0;
@@ -1403,6 +1423,109 @@ select.form_select:disabled {
     padding-bottom: 70px;
   }
 }
+.form_end_copy_group {
+  text-align: center;
+  padding: 20px 20px 32px;
+}
+
+.end_copy_main {
+  font-size: 36px;
+  color: #0F5058;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.end_copy_sub {
+  font-size: 16px;
+  color: #A1A6A7;
+  line-height: 1;
+  font-weight: 700;
+  margin-top: 2px;
+}
+
+.end_copy_img {
+  margin-top: 15px;
+}
+.end_copy_img > img {
+  vertical-align: top;
+  max-width: 196px;
+  margin: 0 auto;
+}
+
+.guide_tb {
+  display: table;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background: #FAFAFA;
+  min-width: 310px;
+}
+
+.guide_tr {
+  display: table-row;
+}
+
+.guide_cell {
+  display: table-cell;
+  vertical-align: middle;
+  border: 1px solid #D9D9D9;
+  padding: 7px 0;
+}
+.guide_cell.define_th {
+  width: 1px;
+  border-right: 0;
+  padding-left: 20px;
+}
+.guide_cell.define_td {
+  padding: 7px 20px;
+  border-left: 0;
+}
+
+.guide_thtext {
+  display: inline-block;
+  color: #909090;
+  font-weight: 700;
+  white-space: nowrap;
+  font-size: 14px;
+}
+
+.guide_tdtext {
+  display: inline-block;
+  color: #3A3B50;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.btn_emp_submit_row {
+  margin-top: 33px;
+  text-align: center;
+}
+
+.btn_emp_submit {
+  display: inline-block;
+  background: #FFEFF0;
+  border: 2px solid #E51F3F;
+  border-radius: 100px;
+  text-align: center;
+  min-width: 218px;
+}
+
+.emp_submit_in {
+  display: inline-block;
+  font-size: 17px;
+  color: #E51F3F;
+  line-height: 1;
+  padding: 10px;
+  font-weight: 700;
+}
+
+.guide_bottom_text_group {
+  text-align: center;
+  margin: 34px 0;
+}
+.guide_bottom_text_group .bullet_list {
+  display: inline-block;
+}
+
 .form_app_tb {
   display: table;
   width: 100%;
@@ -1844,6 +1967,10 @@ input.formbox_element:checked + .formbox_label:after {
   }
   .checkbox_label {
     margin-left: 5px;
+  }
+  .guide_tb {
+    min-width: 0;
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
