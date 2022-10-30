@@ -1,0 +1,53 @@
+.primary_header_wrap{}
+.toplogo_primary{}
+.toplogo_primary_item{
+    > img{}
+}
+
+.gnbmenu_primary_list_wrap{
+    .gnbmenu_list_wrap{}
+}
+
+.gnbmenu_ad_banner{}
+.ad_banner_group{}
+.ad_banner_sub{}
+.ad_banner_main{}
+
+.main_contents_zone{}
+.main_vitem{
+    &:last-of-type{}
+    &.define_primary{}
+    &.define_mv01{}
+    &.define_mv02{}
+    &.define_mv03{}
+    &.define_mv04{}
+    &.define_mv05{}
+    &.define_mv06{
+        .copy_group{}
+        .copy_main{
+            strong{}
+        }
+
+    }
+}
+.vitem_logo_row{}
+.data_get_wrap{}
+.btn_data_get_control{
+    &.prev{}
+    &.next{}
+}
+.swiper-container.main-visual-container{
+    .swiper-wrapper{}
+    .swiper-slide{}
+}
+.data_get_box{}
+.data_get_category{}
+.data_get_category_text{}
+.data_get_text{}
+.data_get_btn{}
+.btn_golink{
+    &:after{}
+}
+.golink_text{}
+
+.vitem_inner{}

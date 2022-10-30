@@ -1,4 +1,162 @@
 ::-webkit-scrollbar {width: 10px;}
 ::-webkit-scrollbar-thumb {background-color: #ccc;border-radius: 10px;background-clip: padding-box;border: 2px solid transparent;}
 ::-webkit-scrollbar-track {background-color: transparent;border-radius: 10px;box-shadow: inset 0px 0px 5px transparent;}
-body{}
+
+.front_body{}
+.page_wrap{}
+
+.sub_visual_zone{}
+
+.header_wrap{}
+
+.toplogo{}
+.toplogo_item{
+    > img{}
+}
+
+.gnbmenu_list_wrap{}
+.gnbmenu_list{
+    > li{
+        &.active{
+            .gnbmenu{
+                &.menu_01{}
+                &.menu_02{}
+                &.menu_03{}
+                &.menu_04{}
+                &.menu_05{}
+                &.menu_06{}
+            }
+        }
+    }
+}
+.gnbmenu{
+    &.menu_01{
+        &:hover{}
+    }
+    &.menu_02{
+        &:hover{}
+    }
+    &.menu_03{
+        &:hover{}
+    }
+    &.menu_04{
+        &:hover{}
+    }
+    &.menu_05{
+        &:hover{}
+    }
+    &.menu_06{
+        &:hover{}
+    }
+}
+.gnbmenu_label{
+    &:before{}
+}
+.gnbmenu_main{}
+
+.add_pop_item_layer{
+
+}
+.btn_quick_add{}
+.btn_quick_add:after{}
+.btn_quick_add_in{}
+
+.sub_visual_copy_group{}
+.sub_visual_label{}
+.sub_visual_main{
+    strong{}
+}
+.sub_visual_mobile{}
+.sub_visual_map_group{}
+.sub_visual_map_item{}
+
+.sv_map_list{
+    > li{
+        &:last-of-type{}
+    }
+}
+.sv_map_home{}
+.sv_map_menu{}
+
+.paging_item_group{}
+.paging_item{
+    &.prev{}
+    &.next{}
+}
+
+.sub_visual_cha_group{}
+.sub_visual_cha_item{}
+.sv_cha{
+    > img{}
+    &:before{}
+}
+
+
+.bottom_quick_zone{
+    .pix_inner{}
+    .copy_group{}
+    .copy_main{
+        strong{}
+    }
+}
+.pix_inner{}
+.bottom_quick_list_wrap{}
+.bottom_quick_list{
+    > li{
+
+    }
+}
+.bottom_quick_banner{
+    &:after{}
+}
+.bottom_quick_copy_group{}
+.bottom_quick_copy_label{}
+.bottom_quick_copy_main{}
+.bottom_quick_cha_group{
+    > img{}
+}
+
+.footer_wrap{
+    .pix_inner{}
+}
+.footer_pc{}
+.footer_main{}
+.footer_sub{}
+.footer_text_sub{}
+.footer_text_main{}
+.footer_address{}
+.address_initem{
+    &:last-of-type{}
+}
+.footer_copyright{}
+
+.family_toggle_item{}
+.family_toggle_bar{}
+.family_toggle_bar_text{}
+.family_option_list_wrap{}
+.family_option_list{
+    > li{
+        &:last-of-type{}
+    }
+}
+.family_option{}
+.footer_customer_item{}
+.footer_customer_label{}
+.footer_customer_main{}
+.footer_customer_sub{}
+
+.footer_mobile{}
+.footer_mb_customer_item{}
+.footer_mb_customer_label{}
+.footer_mb_customer_main{}
+.footer_mb_customer_sub{}
+
+.footer_mb_text_main{}
+
+.footer_company_group{}
+.footer_company_label{}
+.footer_company_address{}
+.address_mb_initem{
+    &:last-of-type{}
+}
+.footer_mb_copyright{}

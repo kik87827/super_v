@@ -1,3 +1,41 @@
+/* 공통 */
+.resmtb17{}
+.resmtb34{}
+.bullet_list{
+    > li {
+        &:before{}
+        &:last-of-type{}
+    }
+}
+.checkbox_design_item{}
+input.checkbox_item{
+    &:checked{
+        & + .checkbox_label{}
+    }
+}
+.checkbox_label{}
+.stand_form_item{}
+input.stand_element{
+    &:checked{
+        & + .stand_label{}
+    }
+}
+.stand_label{}
+.props_design_item{}
+input.props_design_element{
+    &:checked{
+        & + .props_design_label{}
+    }
+}
+.props_design_label{}
+.btn_box{
+    &.small{}
+}
+.red_checkbox{}
+@media (max-width:1023){
+
+}
+
 
 /* 팝업 */
 .mb_dim{display:block;width:100%;height:100%;background:#000;opacity:.3;position:fixed;top:0;left:0;}
@@ -88,4 +126,132 @@
     .fullpop_title{font-size:16px !important;top:0px;}
     .fullpop_item{margin:0;max-height:100%;}
     .fullpop_contlow_in{padding:30px;}
+}
+
+
+.form_end_copy_group{}
+.end_copy_main{}
+.end_copy_sub{}
+.end_copy_img{
+    > img{}
+}
+.guide_tb_g{}
+.guide_tb{}
+.guide_tr{}
+.guide_cell{
+    &.define_th{}
+    &.define_td{}
+}
+.guide_thtext{}
+.guide_tdtext{}
+.btn_emp_submit_row{}
+.btn_emp_submit{}
+.emp_submit_in{}
+
+.form_app_tb{}
+.form_app_tr{}
+.form_app_cell{
+    &.define_th{}
+    &.define_td{}
+}
+.form_app_label{}
+.inline_flex_group{
+    > input.form_input{}
+    > *{
+        &:last-child{}
+    }
+}
+.inline_block_row_group{}
+.inline_block_row{
+    .inline_flex_group{}
+    > select.form_select{}
+    > input.form_input{}
+}
+.btn_inline_box{
+    &:disabled{}
+}
+.formbox_item_group{
+
+}
+input.formbox_element{
+
+}
+.formbox_label{}
+.choice_product_fxwrap{}
+.choice_product_fxcell{}
+.choice_product_item{}
+.choice_product{
+    > img{}
+}
+.choice_form{
+    .checkbox_design_item{}
+}
+
+.form_agree_group{}
+.form_agree_item{}
+.form_agree_row{}
+.form_agree_props_cell{
+    .stand_form_item{}
+}
+.form_agree_else_cell{}
+.form_agree_toggle_cont{}
+.btn_formsubmit_wrap{}
+.btn_formsubmit{
+    &:after{}
+}
+.formsubmit_intext{}
+.warn_para_g{
+    &.d_red{
+      .warn_para{
+        &:before{}
+      }  
+    }
+}
+.warn_para{
+    &:before{}
+}
+
+.reply_form_wrap{
+    .form_app_tb{}
+}
+.cha_choice_fxwrap{}
+.cha_choice{
+    .red_checkbox{}
+}
+.cha_label{
+    > img{}
+}
+.cha_label_text{}
+.form_textarea_group{}
+.form_textarea{}
+.form_textarea_guide{}
+
+.import_form_guide{
+    &:before{}
+}
+
+.props_agree_zone{}
+.agree_total_row{
+    .props_design_item{}
+}
+.agree_tail_group{}
+.agree_tail_row{
+    &:last-of-type{}
+}
+.agree_tail_scroll_zoe{}
+.term_item{}
+.term_title{}
+.term_bullet_list{
+    > li{
+        &:last-of-type{}
+        &:before{}
+    }
+}
+.agree_tail_form_zone{
+    .stand_form_item{}
+}
+.btn_finish_submit_wrap{}
+.btn_finish_submit{}
+.btn_finish_submit_in{
+    &:after{}
 }
