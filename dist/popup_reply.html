@@ -29,50 +29,50 @@
 					</div>
 				</div>
 				<div class="fullpop_contlow">
-					<div class="fullpop_contlow_in">
+					<div class="fullpop_contlow_in type2">
 						<div class="reply_form_wrap">
 							<div class="cha_choice_fxwrap">
-								<div clasa="cha_choice">
+								<div class="cha_choice">
 									<label for="cha_chk_01" class="cha_label">
 										<img src="./images/choice_cha_01.png" alt="">
 										<div class="cha_label_text">위즈</div>
 									</label>
-									<input type="radio" name="cha_radio" class="red_checkbox" id="cha_chk_01" checked>
+									<input type="radio" name="cha_radio" class="dchk" id="cha_chk_01" checked>
 								</div>
-								<div clasa="cha_choice">
+								<div class="cha_choice">
 									<label for="cha_chk_02" class="cha_label">
 										<img src="./images/choice_cha_02.png" alt="">
 										<div class="cha_label_text">슈키</div>
 									</label>
-									<input type="radio" name="cha_radio" id="cha_chk_02">
+									<input type="radio" name="cha_radio" class="dchk" id="cha_chk_02">
 								</div>
-								<div clasa="cha_choice">
+								<div class="cha_choice">
 									<label for="cha_chk_03" class="cha_label">
 										<img src="./images/choice_cha_03.png" alt="">
 										<div class="cha_label_text">듀이</div>
 									</label>
-									<input type="radio" name="cha_radio" id="cha_chk_03">
+									<input type="radio" name="cha_radio" class="dchk" id="cha_chk_03">
 								</div>
-								<div clasa="cha_choice">
+								<div class="cha_choice">
 									<label for="cha_chk_04" class="cha_label">
 										<img src="./images/choice_cha_04.png" alt="">
 										<div class="cha_label_text">이비</div>
 									</label>
-									<input type="radio" name="cha_radio" id="cha_chk_04">
+									<input type="radio" name="cha_radio" class="dchk" id="cha_chk_04">
 								</div>
-								<div clasa="cha_choice">
+								<div class="cha_choice">
 									<label for="cha_chk_05" class="cha_label">
 										<img src="./images/choice_cha_05.png" alt="">
 										<div class="cha_label_text">네오</div>
 									</label>
-									<input type="radio" name="cha_radio" id="cha_chk_05">
+									<input type="radio" name="cha_radio" class="dchk" id="cha_chk_05">
 								</div>
 							</div>
 							<div class="form_textarea_group">
 								<textarea rows="10" cols="10" class="form_textarea" placeholder="슈퍼브이 기대평을 남겨주세요."></textarea>
 								<p class="form_textarea_guide">최대 150자</p>
 							</div>
-							<div class="form_app_tb resmt17">
+							<div class="form_app_tb type2 resmt17">
 								<div class="form_app_tr">
 									<div class="form_app_cell define_th"><span class="form_app_label">이름</span></div>
 									<div class="form_app_cell define_td">
@@ -139,7 +139,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="btn_finish_submit_wrap">
+							<div class="btn_formsubmit_wrap type2">
 								<a href="#" class="btn_finish_submit"><span class="btn_finish_submit_in">등록</span></a>
 							</div>
 						</div>
@@ -152,9 +152,19 @@
 
 		<script>
 			dimLayerShow({
-				"target": "#sample_popup"
+				"target": "#sample_popup",
+				"openCallback": function() {
+					totalCheck();
+				}
 			}); // show
-			// dimLayerHide({"target" : "#deptail_pop01"}); // hide
+
+			function totalCheck() {
+				$("#total_check").on("click", function() {
+					$(".agree_tail_form_zone .stand_element").prop("checked", $(this).prop("checked"))
+				});
+			}
+
+			// dimLayerHide({"target" : "#sample_popup"}); // hide
 		</script>
 
 	</div>
