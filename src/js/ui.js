@@ -5,7 +5,25 @@ $(function(){
   dimLayerControl();
   formCommon();
   toggleFunc();
+  layoutCommon();
 });
+
+function layoutCommon(){
+	$(".family_toggle_bar").on("click",function(){
+		$(this).toggleClass("active");
+		$(".family_option_list_wrap").slideToggle();
+	});
+
+	$(window).on("scroll",function(){
+		if($(window).width()<1920){
+			if($(this).scrollTop()===0){
+				$(".header_add_obj_group").removeClass("active");
+			}else{
+				$(".header_add_obj_group").addClass("active");
+			}
+		}
+	});
+}
 
 function toggleFunc(){
 	$("[data-toggleTarget]").on("click",function(){
