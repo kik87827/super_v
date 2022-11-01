@@ -27,8 +27,13 @@
         .sub_visual_main strong{color:#5479CB;}
     }
 }
+
+.sub_visual_else_zone{background:#0A2E71;position:relative;padding:30px 0 54px;text-align: center;}
+.sv_else_title{color:#fff;font-size:46px;font-family: 'GmarketSansBold';text-align: center;letter-spacing: -1px;}
 .sub_visual_pix_inner{position:absolute;bottom:0;left:50%;height:calc(100% - 77px);transform: translateX(-50%);width:1174px;}
-.header_wrap{position:absolute;width:100%;left:0;top:0;z-index:10;}
+.header_wrap{position:absolute;width:100%;left:0;top:0;z-index:10;
+    &.type2{position:static;}
+}
 
 .toplogo{display:inline-block;position:absolute;top:30px;left:50px;font-size:0;line-height:0;}
 .toplogo_item{
@@ -96,7 +101,7 @@
 }
 .gnbmenu_main{position:relative;z-index:2;color:#fff;font-size:18px;font-family: 'GmarketSansBold';margin-top:4px;}
 
-.header_add_obj_group{display:block;position:fixed;top:30px;right:40px;}
+.header_add_obj_group{display:block;position:fixed;bottom:30px;right:40px;}
 .btn_header_obj_layer{
     display:inline-flex;align-items:center;background:#E51F3F;height:48px;border-radius:100px;padding:0 12px 0 0;
     &:after{display:block;content:'';width:30px;height:30px;background:#fff url("../images/ico_play_x2.png") no-repeat 50% 50%/17px auto;border-radius:100%;flex:0 0 30px;}
@@ -336,7 +341,9 @@
     .gnbmenu_list > li.active .gnbmenu .gnbmenu_main{
         &:after{height:3px;}
     }
-    .multi_top_zone{border-radius:0 0 15px 15px;}
+    .multi_top_zone{border-radius:0 0 15px 15px;
+        &.mbtype2{border-radius:0;}
+    }
     .sub_visual_cha_group{width:37.795vw;padding-bottom:3.150vw}
     .sub_visual_zone.shu_type .sub_visual_cha_group{padding-bottom:2.5vw}
     .sv_cha > img{max-width:25.197vw;}
@@ -345,6 +352,10 @@
     .sub_visual_copy_inner{padding:0 6.299vw;}
     .sub_visual_label{font-size:3.465vw;}
     .sub_visual_main{font-size:6.614vw;}
+
+        
+    .sub_visual_else_zone{padding:15px 20px 27px;}
+    .sv_else_title{font-size:23px;}
 }
 @media(max-width:430px){
     .gnbmenu_list_wrap{padding: 0 15px 20px;position:relative;overflow-x:auto;margin:15px -20px -20px;}
