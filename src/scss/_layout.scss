@@ -288,6 +288,7 @@
     .gnbmenu_main{font-size:20px;}
     .multi_top_zone{border-radius:0 0 50px 50px;position:relative;overflow:hidden;
         &.type2{border-radius:0;}
+        &.mbtype2{border-radius:0;}
     }
     .header_bg{display:block;content:'';position:absolute;top:-100px;width:100%;height:100px;background:#0A2E71;}
     .sub_visual_pix_inner{width:100%;}

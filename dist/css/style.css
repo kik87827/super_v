@@ -1642,6 +1642,9 @@ textarea {
   .multi_top_zone.type2 {
     border-radius: 0;
   }
+  .multi_top_zone.mbtype2 {
+    border-radius: 0;
+  }
   .header_bg {
     display: block;
     content: "";
@@ -2321,6 +2324,13 @@ textarea {
   font-weight: 700;
 }
 
+.mb_bottom_box {
+  display: none;
+}
+.mb_bottom_box > img {
+  width: 100%;
+}
+
 @media (max-width: 1023px) {
   .event_mb_img {
     display: block;
@@ -2341,6 +2351,7 @@ textarea {
   .event_box.type2 {
     margin-top: 0;
     border-radius: 0;
+    padding-bottom: 30px;
   }
   .pc_img {
     display: none !important;
@@ -2459,6 +2470,9 @@ textarea {
     height: 36.5px;
     border: 1px solid #d8d8d8;
     border-radius: 10px;
+  }
+  .mb_bottom_box {
+    display: block;
   }
 }
 /* 공통 */
