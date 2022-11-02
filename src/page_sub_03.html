@@ -4,55 +4,13 @@
 <body class="front_body">
 	<div class="page_wrap">
 		<div class="multi_top_zone type2">
+			<!-- 221102 header 수정 -->
 			<header class="header_wrap eng2_active">
 				<h1 class="toplogo"><a href="#" class="toplogo_item"><img src="images/toplogo.png" alt=""></a></h1>
-				<div class="gnbmenu_list_wrap">
-					<ul class="gnbmenu_list">
-						<li>
-							<a href="#" class="gnbmenu menu_01">
-								<div class="gnbmenu_label">바이링구얼로 크는</div>
-								<div class="gnbmenu_main">영어</div>
-							</a>
-						</li>
-						<li>
-							<a href="#" class="gnbmenu menu_02">
-								<div class="gnbmenu_label">업계최대 영어도서관</div>
-								<div class="gnbmenu_main">슈퍼리딩</div>
-							</a>
-						</li>
-						<li class="active">
-							<a href="#" class="gnbmenu menu_03">
-								<div class="gnbmenu_label">1:1 영어 전담 케어</div>
-								<div class="gnbmenu_main">영어특별반</div>
-							</a>
-						</li>
-						<li>
-							<a href="#" class="gnbmenu menu_04">
-								<div class="gnbmenu_label">사고력과 두뇌개발</div>
-								<div class="gnbmenu_main">수학</div>
-							</a>
-						</li>
-						<li>
-							<a href="#" class="gnbmenu menu_05">
-								<div class="gnbmenu_label">창의력/상상력</div>
-								<div class="gnbmenu_main">
-									<span class="pc_menu">한글 &middot; 국어</span>
-									<span class="mb_menu">한글</span>
-								</div>
-							</a>
-						</li>
-						<li>
-							<a href="#" class="gnbmenu menu_06">
-								<div class="gnbmenu_main">
-									<span class="pc_menu">슈키&이비를<br>만나다</span>
-									<span class="mb_menu">슈키&이비</span>
-								</div>
-							</a>
-						</li>
-					</ul>
-				</div>
+				@@include('./include/gnb.html')
 				<div class="header_add_obj_group"><a href="#" class="btn_header_obj_layer"><span class="header_obj_intext">무료체험사전예약</span></a></div>
 			</header>
+			<!-- // 221102 header 수정 -->
 		</div>
 		<div class="multi_topnext_zone">
 			
@@ -70,6 +28,11 @@
 			<p style="font-family: 'GmarketSansBold';font-size:30px;color:#fff;line-height:1.5">내용 수급대기중</p>
 			<p style="font-family: 'GmarketSansBold';font-size:30px;color:#fff;line-height:1.5">내용 수급대기중</p>
 		</div>
+		<script>
+			$(function(){
+				$(".gnbmenu.menu_03").parent("li").addClass("active");
+			})
+		</script>
 		@@include('./include/bottom.html')
 		@@include('./include/footer.html')
 	</div>

@@ -17,32 +17,38 @@
 <body class="front_body">
 	<div class="page_wrap">
 		<div class="multi_top_zone type2">
+			<!-- 221102 header 수정 -->
 			<header class="header_wrap reading_active">
 				<h1 class="toplogo"><a href="#" class="toplogo_item"><img src="images/toplogo.png" alt=""></a></h1>
+				<!-- 221102 gnb 변경 -->
 				<div class="gnbmenu_list_wrap">
 					<ul class="gnbmenu_list">
 						<li>
 							<a href="#" class="gnbmenu menu_01">
 								<div class="gnbmenu_label">바이링구얼로 크는</div>
 								<div class="gnbmenu_main">영어</div>
+								<div class="hover_bg"></div>
 							</a>
 						</li>
-						<li class="active">
+						<li>
 							<a href="#" class="gnbmenu menu_02">
 								<div class="gnbmenu_label">업계최대 영어도서관</div>
 								<div class="gnbmenu_main">슈퍼리딩</div>
+								<div class="hover_bg"></div>
 							</a>
 						</li>
 						<li>
 							<a href="#" class="gnbmenu menu_03">
 								<div class="gnbmenu_label">1:1 영어 전담 케어</div>
 								<div class="gnbmenu_main">영어특별반</div>
+								<div class="hover_bg"></div>
 							</a>
 						</li>
 						<li>
 							<a href="#" class="gnbmenu menu_04">
 								<div class="gnbmenu_label">사고력과 두뇌개발</div>
 								<div class="gnbmenu_main">수학</div>
+								<div class="hover_bg"></div>
 							</a>
 						</li>
 						<li>
@@ -52,6 +58,7 @@
 									<span class="pc_menu">한글 &middot; 국어</span>
 									<span class="mb_menu">한글</span>
 								</div>
+								<div class="hover_bg"></div>
 							</a>
 						</li>
 						<li>
@@ -60,12 +67,16 @@
 									<span class="pc_menu">슈키&이비를<br>만나다</span>
 									<span class="mb_menu">슈키&이비</span>
 								</div>
+								<div class="hover_bg"></div>
 							</a>
 						</li>
 					</ul>
+					<div class="gnbmenu_hover_bg"></div>
 				</div>
+				<!-- // 221102 gnb 변경 -->
 				<div class="header_add_obj_group"><a href="#" class="btn_header_obj_layer"><span class="header_obj_intext">무료체험사전예약</span></a></div>
 			</header>
+			<!-- // 221102 header 수정 -->
 		</div>
 		<div class="multi_topnext_zone">
 
@@ -83,6 +94,11 @@
 			<p style="font-family: 'GmarketSansBold';font-size:30px;color:#fff;line-height:1.5">내용 수급대기중</p>
 			<p style="font-family: 'GmarketSansBold';font-size:30px;color:#fff;line-height:1.5">내용 수급대기중</p>
 		</div>
+		<script>
+			$(function() {
+				$(".gnbmenu.menu_02").parent("li").addClass("active");
+			})
+		</script>
 		<div class="bottom_quick_zone">
 			<div class="pix_inner">
 				<div class="copy_group">
