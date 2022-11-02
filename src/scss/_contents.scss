@@ -475,3 +475,22 @@ input.formbox_element{
     .cha_choice{flex:0 0 33.33333333%;padding-bottom:20px;}
     .cha_label_text{padding:5px 0;}
 }
+
+
+/* design */
+.tong_img_wrap{
+    font-size:0;line-height:0;
+    .tong_img_item{
+        img{vertical-align: top;z-index:1;position:relative;width:100%;}
+    }
+}
+
+.eng_cont{
+    .tong_img_item{max-width:1140px;margin:0 auto;
+        &.has_bg_emp{
+            &:before{display:block;content:'';width:100vw;position:absolute;top:0;left:50%;height:100%;transform: translate(-50%,0);background:#f8f4f5;}
+            position:relative;
+        }
+    }
+}
+/* // design */

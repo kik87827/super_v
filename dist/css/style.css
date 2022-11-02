@@ -844,6 +844,11 @@ textarea {
   opacity: 0;
 }
 
+.page_wrap {
+  position: relative;
+  overflow-x: hidden;
+}
+
 .sub_visual_zone {
   background: #0A2E71;
   position: relative;
@@ -1197,8 +1202,9 @@ textarea {
   left: 50%;
   height: 70px;
   z-index: 10;
-  width: 1174px;
+  max-width: 1174px;
   transform: translateX(-50%);
+  width: 100%;
 }
 
 .sub_visual_map_item {
@@ -1299,6 +1305,10 @@ textarea {
   max-width: 1180px;
   margin: 0 auto;
   padding: 126px 30px;
+}
+.middle_zone.img_cont {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .bottom_quick_zone {
@@ -1679,6 +1689,10 @@ textarea {
     height: 8px;
     top: 2px;
   }
+  .sub_visual_zone:after {
+    background-image: url("../images/bg_svline3.png");
+    background-position: 0 0;
+  }
   .gnbmenu_list > li:first-of-type > * {
     padding-left: 15%;
   }
@@ -1695,8 +1709,20 @@ textarea {
     left: -16px;
     transform: translateX(0);
   }
+  .sub_visual_map_group {
+    max-width: 380px;
+    background-position: 0 0;
+    justify-content: flex-start;
+    left: 0;
+    transform: translate(0);
+  }
+  .sub_visual_map_item {
+    width: 380px;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
 }
-@media (max-width: 1279px) {
+@media (max-width: 1300px) {
   .toplogo {
     transform: scale(0.8);
     margin-top: -10px;
@@ -4497,4 +4523,36 @@ input.formbox_element:checked + .formbox_label:after {
     padding: 5px 0;
   }
 }
+/* design */
+.tong_img_wrap {
+  font-size: 0;
+  line-height: 0;
+}
+.tong_img_wrap .tong_img_item img {
+  vertical-align: top;
+  z-index: 1;
+  position: relative;
+  width: 100%;
+}
+
+.eng_cont .tong_img_item {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.eng_cont .tong_img_item.has_bg_emp {
+  position: relative;
+}
+.eng_cont .tong_img_item.has_bg_emp:before {
+  display: block;
+  content: "";
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 100%;
+  transform: translate(-50%, 0);
+  background: #f8f4f5;
+}
+
+/* // design */
 /*# sourceMappingURL=style.css.map */
