@@ -26,15 +26,45 @@
 
 .main_contents_zone{}
 .main_vitem{
-    &:last-of-type{}
-    &.define_primary{}
-    &.define_mv01{background:#0A2E71;}
-    &.define_mv02{background:#FF334E;}
-    &.define_mv03{background:#FC9C2D;}
-    &.define_mv04{background:#39D3BE;}
-    &.define_mv05{background:#571F95;}
+    position:relative;
+    &:before{
+        display:block;content:'';position:absolute;bottom:0;left:0;width:92px;height:83px;background:url("../images/mc_corner_top_01.png") no-repeat 0 0;
+    }
+    &:after{
+        display:block;content:'';position:absolute;top:0;right:0;width:92px;height:84px;background:url("../images/mc_corner_bottom_01.png") no-repeat 0 0;
+    }
+    &:first-of-type{
+       &:after{display:none;} 
+    }
+    &:last-of-type{
+       &:before{display:none;} 
+    }
+    &.define_primary{
+        background:#eff2f7 url("../images/bg_mvitem_primary.png") no-repeat 100% 0;
+    }
+    &.define_mv01{background:#0A2E71 url("../images/bg_mvitem_01.png") no-repeat 50% 50%;
+        &:before{background-image:url("../images/mc_corner_top_02.png")}
+        &:after{background-image:url("../images/mc_corner_bottom_01.png")}
+    }
+    &.define_mv02{background:#F2D798 url("../images/bg_mvitem_02.png") no-repeat 50% 50%;
+        &:before{background-image:url("../images/mc_corner_top_03.png")}
+        &:after{background-image:url("../images/mc_corner_bottom_02.png")}
+    }
+    &.define_mv03{background:#24D6B2 url("../images/bg_mvitem_03.png") no-repeat 50% 50%;
+        &:before{background-image:url("../images/mc_corner_top_04.png")}
+        &:after{background-image:url("../images/mc_corner_bottom_03.png")}
+    }
+    &.define_mv04{background:#ffc70d url("../images/bg_mvitem_04.png") no-repeat 50% 50%;
+        &:before{background-image:url("../images/mc_corner_top_05.png")}
+        &:after{background-image:url("../images/mc_corner_bottom_04.png")}
+    }
+    &.define_mv05{background:#faf8f8 url("../images/bg_mvitem_05.png") no-repeat 50% 100%;
+        &:before{background-image:url("../images/mc_corner_top_06.png")}
+        &:after{background-image:url("../images/mc_corner_bottom_05.png")}
+    }
     &.define_mv06{
-        background:#009F92;
+        background:#4387b9;
+        &:after{background-image:url("../images/mc_corner_bottom_06.png")}
         .copy_group{}
         .copy_main{
             strong{}
@@ -81,6 +111,11 @@
 @media(max-width:1023px){
     .multi_top_zone.main_type{border-radius:0 0 15px 15px;}
     .primary_header_wrap{border-radius:0 0 15px 15px;padding:15px 30px 20px;}
+    .main_vitem{
+        &:before,
+        &:after{display:none;}
+        background:none !important;
+    }
 }
 @media(max-width:1550px){
     
