@@ -4585,8 +4585,57 @@ input.formbox_element:checked + .formbox_label:after {
   background: #f5f8fd;
 }
 
+.shu_cont .tong_img_item {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.shu_cont .tong_img_item.has_bg_emp {
+  position: relative;
+}
+.shu_cont .tong_img_item.has_bg_emp:before {
+  display: block;
+  content: "";
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 100%;
+  transform: translate(-50%, 0);
+  background: #f4f4f4;
+}
+
+.hangle_cont .tong_img_item {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.hangle_cont .tong_img_item.has_bg_emp {
+  position: relative;
+}
+.hangle_cont .tong_img_item.has_bg_emp:before {
+  display: block;
+  content: "";
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 100%;
+  transform: translate(-50%, 0);
+  background: #f5f8fd;
+}
+
 .multi_topnext2_zone {
   padding-bottom: 126px;
+}
+
+.btn_link_item_row {
+  text-align: center;
+}
+
+.btn_link_item {
+  display: inline-block;
+}
+.btn_link_item.mbtype {
+  max-width: 41.333vw;
 }
 
 @media (max-width: 1023px) {
