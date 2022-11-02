@@ -7,6 +7,43 @@ $(function() {
   layoutCommon();
 });
 
+$(window).on("load", function() {
+  mainBanner();
+});
+
+function mainBanner() {
+  var bottom_banner_wrap = $(".bottom_banner_wrap");
+  var header_add_obj_group = $(".header_add_obj_group");
+  var footer_wrap = $(".footer_wrap");
+
+  $(window).on("scroll", function() {
+    if ($(window).width() > 1550) {
+      return;
+    }
+    if ($(window).scrollTop() > ($(document).height() - $(window).height()) - (footer_wrap.outerHeight() / 2)) {
+      header_add_obj_group.fadeOut();
+    } else {
+      header_add_obj_group.fadeIn();
+    }
+  });
+
+  $(window).on("resize", function() {
+    action();
+  }).resize();
+
+  function action() {
+    if (footer_wrap.length) {
+      footer_wrap.css({
+        "padding-bottom": bottom_banner_wrap.outerHeight()
+      });
+    } else {
+      page_wrap.css({
+        "padding-bottom": bottom_banner_wrap.outerHeight()
+      });
+    }
+  }
+}
+
 function layoutCommon() {
   $(".family_toggle_bar").on("click", function() {
     $(this).toggleClass("active");
