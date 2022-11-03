@@ -1464,7 +1464,21 @@ textarea {
 .address_initem {
   margin: 0 20px 3px 0;
   display: inline-block;
+  color: #fff;
 }
+.address_initem .link_address {
+  margin-left: 5px;
+}
+.address_initem.type2 {
+  text-decoration: underline;
+}
+
+.link_address {
+  font-size: 14px;
+  display: inline-block;
+  color: #3883BA;
+}
+
 .footer_copyright {
   color: #6C6C74;
   font-size: 14px;

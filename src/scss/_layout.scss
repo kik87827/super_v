@@ -234,8 +234,12 @@
 .footer_address{font-size:14px;color:#fff;margin-top:15px;}
 .address_initem{
     margin:0 20px 3px 0;display:inline-block;
+    color:#fff;
+    .link_address{margin-left:5px;}
     &:last-of-type{}
+    &.type2{text-decoration: underline;}
 }
+.link_address{font-size:14px;display:inline-block;color:#3883BA;}
 .footer_copyright{color:#6C6C74;font-size:14px;margin-top:20px;}
 
 .family_toggle_item{position:relative;}
