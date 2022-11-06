@@ -2756,6 +2756,7 @@ footer.footer_wrap.type2 .pix_inner {
 }
 .event_zone {
   background: #6573DC;
+  position: relative;
 }
 
 .event_zone img {
@@ -3059,6 +3060,10 @@ footer.footer_wrap.type2 .pix_inner {
 }
 
 @media (max-width: 1023px) {
+  .aside_layer {
+    top: 0 !important;
+    position: absolute;
+  }
   .event_mb_img {
     display: block;
   }

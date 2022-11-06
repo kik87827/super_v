@@ -1,4 +1,4 @@
-.event_zone{background:#6573DC;}
+.event_zone{background:#6573DC;position:relative;}
 
 .event_zone img{vertical-align: top;max-width:inherit;width:100%;}
 
@@ -130,6 +130,7 @@
 .aside_layer{top:230px !important;}
 
 @media(max-width:1023px){
+  .aside_layer{top:0 !important;position:absolute}
     .event_mb_img{display:block;}
     .event_pc_img{display:none;}
     .pc_item{display:none !important;}
