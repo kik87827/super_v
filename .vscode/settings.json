@@ -1,4 +1,8 @@
 {
+<<<<<<< Updated upstream
     "editor.fontSize": 14,
+=======
+    "editor.fontSize": 15,
+>>>>>>> Stashed changes
     "editor.fontWeight": "normal"
 }
