@@ -501,10 +501,19 @@ input.formbox_element{
 .eng_cont{
     .tong_img_item{max-width:1140px;margin:0 auto;
         &.has_bg_emp{
-            &:before{display:block;content:'';width:100vw;position:absolute;top:0;left:50%;height:100%;transform: translate(-50%,0);background:#f8f4f5;}
+            &:before{display:block;content:'';width:100vw;position:absolute;top:0;left:50%;height:100%;transform: translate(-50%,0);background:#f7f4f4;}
             position:relative;
+
+            &.type2{
+                &:before{background-color:#f5f8fd;}
+            }
         }
     }
+}
+.has_btn{text-align: center;}
+.btn_img{
+    display:inline-block;
+    img{vertical-align: top;}
 }
 .math_cont{
     .tong_img_item{max-width:1140px;margin:0 auto;
@@ -548,5 +557,10 @@ input.formbox_element{
         }
     }
     .multi_topnext2_zone{padding-bottom:60px;}
+
+    .btn_img{
+        display:inline-block;
+        img{max-width:156px;margin:0 auto;}
+    }
 }
 /* // design */
