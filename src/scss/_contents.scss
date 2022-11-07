@@ -585,5 +585,7 @@ box-shadow: 4px 4px 15px 4px rgba(0,0,0,0.1);
 }
 /* // design */
 
-.page_term_title_row{background:#000;padding:20px;}
+.page_term_title_row{background:#000;padding:20px;display:flex;align-items: center;justify-content: space-between;}
 .page_term_title{font-size:20px;font-weight:700;color:#fff;}
+
+.btn_page_term_close{display:block;width:30px;height:30px;background:url("../images/btn_term_close2.png") no-repeat 50% 50%;}
