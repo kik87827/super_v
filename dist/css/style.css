@@ -1329,7 +1329,7 @@ textarea {
 .middle_zone {
   max-width: 1180px;
   margin: 0 auto;
-  padding: 126px 30px 250px;
+  padding: 126px 30px 200px;
 }
 .middle_zone.img_cont {
   padding-left: 0;
@@ -4593,6 +4593,36 @@ input.formbox_element:checked + .formbox_label:after {
 
 .tong_img_item.has_btn {
   position: relative;
+}
+.tong_img_item.has_layer {
+  position: relative;
+}
+
+.has_layer_img_z {
+  display: inline-block;
+  position: relative;
+}
+
+.layer_img_w {
+  position: absolute;
+  z-index: 2;
+}
+
+.layer_img_w img {
+  width: 100%;
+  height: 100%;
+}
+
+.tong_img_item.has_gif {
+  margin: 6.667vw 9.333vw;
+  border: 1.333vw solid #fff;
+  border-radius: 3.733vw;
+  position: relative;
+  box-shadow: 4px 4px 15px 4px rgba(0, 0, 0, 0.1);
+}
+.tong_img_item.has_gif img {
+  vertical-align: top;
+  width: 100%;
 }
 
 .opacity_layer_btn { /*background:red;*/

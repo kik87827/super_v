@@ -495,6 +495,16 @@ input.formbox_element{
 
 .tong_img_item{
     &.has_btn{position:relative;}
+    &.has_layer{position:relative;}
+}
+.has_layer_img_z{display:inline-block;position:relative;}
+.layer_img_w{position:absolute;z-index:2}
+.layer_img_w img{width:100%;height:100%;}
+.tong_img_item.has_gif{
+    margin:6.667vw 9.333vw;border:1.333vw solid #fff;border-radius:3.733vw;position:relative;
+    -webkit-box-shadow: 4px 4px 15px 4px rgba(0,0,0,0.1); 
+box-shadow: 4px 4px 15px 4px rgba(0,0,0,0.1);
+    img{vertical-align: top;width:100%;}
 }
 .opacity_layer_btn{/*background:red;*/position:absolute;opacity:.5;z-index:5;}
 
