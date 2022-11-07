@@ -1329,7 +1329,7 @@ textarea {
 .middle_zone {
   max-width: 1180px;
   margin: 0 auto;
-  padding: 126px 30px;
+  padding: 126px 30px 250px;
 }
 .middle_zone.img_cont {
   padding-left: 0;
@@ -4595,8 +4595,7 @@ input.formbox_element:checked + .formbox_label:after {
   position: relative;
 }
 
-.opacity_layer_btn {
-  background: red;
+.opacity_layer_btn { /*background:red;*/
   position: absolute;
   opacity: 0.5;
   z-index: 5;
