@@ -889,6 +889,7 @@ textarea {
 }
 .sub_visual_zone.hangle_type .sub_visual_cha_group {
   background-image: url("../images/sv_cha_shadow_05.png");
+  padding-bottom: 20px;
 }
 .sub_visual_zone.hangle_type .sub_visual_main strong {
   color: #29DB83;
@@ -1219,7 +1220,7 @@ textarea {
   font-family: "GmarketSansBold";
   font-size: 46px;
   color: #fff;
-  margin-top: 18px;
+  margin-top: 5px;
 }
 .sub_visual_main strong {
   color: #FEC900;
@@ -1965,7 +1966,7 @@ textarea {
   }
   .sub_visual_cha_group {
     width: 37.795vw;
-    padding-bottom: 3.15vw;
+    padding-bottom: 3.15vw !important;
   }
   .sub_visual_zone.shu_type .sub_visual_cha_group {
     padding-bottom: 2.5vw;
