@@ -4594,7 +4594,8 @@ input.formbox_element:checked + .formbox_label:after {
   position: relative;
 }
 
-.opacity_layer_btn { /*background:red;*/
+.opacity_layer_btn {
+  background: red;
   position: absolute;
   opacity: 0.5;
   z-index: 5;
@@ -4630,6 +4631,13 @@ input.formbox_element:checked + .formbox_label:after {
   display: inline-block;
 }
 .btn_img img {
+  vertical-align: top;
+}
+
+.btn_mbimg {
+  display: block;
+}
+.btn_mbimg img {
   vertical-align: top;
 }
 

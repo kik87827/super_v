@@ -496,7 +496,7 @@ input.formbox_element{
 .tong_img_item{
     &.has_btn{position:relative;}
 }
-.opacity_layer_btn{/*background:red;*/position:absolute;opacity:.5;z-index:5;}
+.opacity_layer_btn{background:red;position:absolute;opacity:.5;z-index:5;}
 
 .eng_cont{
     .tong_img_item{max-width:1140px;margin:0 auto;
@@ -513,6 +513,10 @@ input.formbox_element{
 .has_btn{text-align: center;}
 .btn_img{
     display:inline-block;
+    img{vertical-align: top;}
+}
+.btn_mbimg{
+    display:block;
     img{vertical-align: top;}
 }
 .math_cont{
