@@ -3,61 +3,54 @@
 @@include('./include/head.html')
 <body class="front_body">
 	<div class="page_wrap">
-		<div class="multi_top_zone">
-			<!-- 221102 header 수정 -->
-			<header class="header_wrap shu_active">
-				<h1 class="toplogo"><a href="main.html" class="toplogo_item"><img src="images/toplogo.png" alt=""></a></h1>
-				@@include('./include/gnb.html')
-				<div class="header_add_obj_group"><a href="#" class="btn_header_obj_layer"><span class="header_obj_intext">무료체험사전예약</span></a></div>
-			</header>
-			<!-- // 221102 header 수정 -->
-			<div class="sub_visual_zone shu_type">
-				<div class="sub_visual_pix_inner">
-					<div class="sub_visual_copy_group">
-						<div class="sub_visual_copy_inner">
-							<div class="sub_visual_label">단순한 케이스, 그 이상의 존재감!<br>내 친구 같은 캐릭터가 언제 어디든 함께</div>
-							<div class="sub_visual_main">슈키&amp;이비<strong>CASE</strong></div>
+		<div class="multi_top_zone_global shu_type">
+			<div class="multi_top_zone shu_type">
+				<!-- 221102 header 수정 -->
+				<header class="header_wrap shu_active">
+					<h1 class="toplogo"><a href="main.html" class="toplogo_item"><img src="images/toplogo.png" alt=""></a></h1>
+					@@include('./include/gnb.html')
+					<div class="header_add_obj_group"><a href="#" class="btn_header_obj_layer"><span class="header_obj_intext">무료체험사전예약</span></a></div>
+				</header>
+				<!-- // 221102 header 수정 -->
+				<div class="sub_visual_zone shu_type">
+					<div class="sub_visual_pix_inner">
+						<div class="sub_visual_copy_group">
+							<div class="sub_visual_copy_inner">
+								<div class="sub_visual_label">단순한 케이스, 그 이상의 존재감!<br>내 친구 같은 캐릭터가 언제 어디든 함께</div>
+								<div class="sub_visual_main">슈키&amp;이비<strong>CASE</strong></div>
+							</div>
+						</div>
+						<div class="sub_visual_cha_group">
+							<div class="sub_visual_cha_item">
+								<div class="sv_cha"><img src="./images/sv_cha_06.png" alt=""></div>
+							</div>
 						</div>
 					</div>
-					<div class="sub_visual_cha_group">
-						<div class="sub_visual_cha_item">
-							<div class="sv_cha"><img src="./images/sv_cha_06.png" alt=""></div>
+					<!-- 221103 삭제 <div class="sub_visual_map_group">
+						<div class="sub_visual_map_item">
+							<ul class="sv_map_list">
+								<li><a href="#" class="sv_map_home"><span class="hdtext">HOME</span></a></li>
+								<li><a href="#" class="sv_map_menu">슈키&amp;이비</a></li>
+							</ul>
+							<div class="paging_item_group">
+								<a href="#" class="paging_item prev"><span class="hdtext">이전</span></a>
+								<a href="#" class="paging_item next"><span class="hdtext">다음</span></a>
+							</div>
 						</div>
-					</div>
+					</div> -->
 				</div>
-				<!-- 221103 삭제 <div class="sub_visual_map_group">
-					<div class="sub_visual_map_item">
-						<ul class="sv_map_list">
-							<li><a href="#" class="sv_map_home"><span class="hdtext">HOME</span></a></li>
-							<li><a href="#" class="sv_map_menu">슈키&amp;이비</a></li>
-						</ul>
-						<div class="paging_item_group">
-							<a href="#" class="paging_item prev"><span class="hdtext">이전</span></a>
-							<a href="#" class="paging_item next"><span class="hdtext">다음</span></a>
-						</div>
-					</div>
-				</div> -->
 			</div>
 		</div>
-		<section class="middle_zone shu_cont img_cont">
+		<section class="middle_zone shu_cont img_cont type2">
 			<!-- pc -->
 			<div class="pc_item">
 				<div class="tong_img_wrap">
-					<div class="tong_img_item">
-						<img src="./images/shu_pc_img_01.jpg" alt="">
-					</div>
-					<div class="tong_img_item has_bg_emp">
-						<img src="./images/shu_pc_img_02.jpg" alt="">
-					</div>
-					<div class="tong_img_item">
-						<img src="./images/shu_pc_img_03.jpg" alt="">
-					</div>
-					<div class="tong_img_item">
-						<img src="./images/shu_photo.jpg" alt="">
-					</div>
-					<div class="tong_img_item">
-						<img src="./images/shu_pc_img_04.jpg" alt="">
-					</div>
+					<div class="bg_tong" style="background-image:url(./images/shu_pc_img_01.jpg);height:576px;"></div>
+					<div class="bg_tong" style="background-image:url(./images/shu_pc_img_02.jpg);height:537px;"></div>
+					<div class="bg_tong" style="background-image:url(./images/shu_pc_img_03.jpg);height:617px;"></div>
+					<div class="bg_tong" style="background-image:url(./images/shu_pc_img_04.jpg);height:619px;"></div>
+					<div class="bg_tong" style="background-image:url(./images/shu_pc_img_05.jpg);height:618px;"></div>
+					<div class="bg_tong" style="background-image:url(./images/shu_pc_img_06.jpg);height:671px;"></div>
 				</div>
 			</div>
 			<!-- // pc -->
@@ -72,6 +65,15 @@
 					</div>
 					<div class="tong_img_item">
 						<img src="./images/shu_mb_img_03.jpg" alt="">
+					</div>
+					<div class="tong_img_item">
+						<img src="./images/shu_mb_img_04.jpg" alt="">
+					</div>
+					<div class="tong_img_item">
+						<img src="./images/shu_mb_img_05.jpg" alt="">
+					</div>
+					<div class="tong_img_item">
+						<img src="./images/shu_mb_img_06.jpg" alt="">
 					</div>
 				</div>
 			</div>

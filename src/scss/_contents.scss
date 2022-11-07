@@ -537,6 +537,8 @@ input.formbox_element{
     &.mbtype{max-width:41.333vw;}
 }
 
+.bg_tong{background-repeat:no-repeat;background-position:50% 0;}
+
 @media(max-width:1023px){
     .multi_topnext_zone{border-radius:0;position:relative;overflow:hidden;padding-top:0}
     .tong_img_wrap{
