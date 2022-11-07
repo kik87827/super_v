@@ -104,7 +104,7 @@
 .data_get_category{}
 .data_get_category:before{display:block;content:'';width:9px;height:9px;background:#fff;border-radius:100%;}
 .data_get_category_text{display:block;font-size:17px;margin-top:5px;color:#fff;}
-.data_get_text{font-size:22px;color:#fff;word-break:break-all;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 3;overflow: hidden;}
+// .data_get_text{font-size:22px;color:#fff;word-break:break-all;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 3;overflow: hidden;}
 .data_get_btn{}
 .btn_golink{
     &:after{}
@@ -184,14 +184,14 @@
 }
 .get_newsdata_list_wrap{max-width:1000px;margin:0 auto;}
 .get_newdata_list{display:flex;justify-content: center;margin:0 -40px;}
-.get_newdata_list > li{margin:0 40px;}
+.get_newdata_list > li{margin:0 40px;flex:1;}
 .get_newdata_list > li:last-of-type{}
 .data_get_box{display:block;border:2px solid rgba(255,255,255,.39);position:relative;min-height:58px;padding:35px 35px;
     // &:after{display:block;content:'';position:absolute;bottom:-2px;right:-2px;width:59px;height:58px;background:url("../images/news_line.png") no-repeat 0 0/100% auto;}
 }
 .data_get_category{}
 .data_get_category_text{}
-.data_get_text{color:#fff;word-break:break-all;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 3;overflow: hidden; font-size:22px;font-weight:700;margin-top:20px;}
+.data_get_text{color:#fff;word-break:break-all;height:104px;overflow: hidden; font-size:22px;font-weight:700;margin-top:20px;}
 .data_get_btn{margin-top:65px;}
 .btn_golink{display:inline-flex;align-items: center;}
 .btn_golink:after{display:block;content:'';flex:0 0 52px;height:14px;background:url("../images/ico_allow_news.png") no-repeat 0 0/100% auto;width:52px;}
@@ -256,7 +256,7 @@
     .data_get_category{}
     .data_get_category:before{width:6px;height:6px;}
     .data_get_category_text{font-size:12px;}
-    .data_get_text{font-size:17px;margin-top:10px;}
+    .data_get_text{font-size:17px;margin-top:10px;height:auto;}
     .data_get_btn{margin-top:32px;}
     .btn_golink:after{display:block;content:'';flex:0 0 40px;height:10px;background:url("../images/new_line_mb.png") no-repeat 0 0/100% auto;width:40px;}
     .golink_text{font-size:11px;margin-right:10px;}

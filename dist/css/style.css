@@ -2308,16 +2308,6 @@ textarea {
   color: #fff;
 }
 
-.data_get_text {
-  font-size: 22px;
-  color: #fff;
-  word-break: break-all;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
-  overflow: hidden;
-}
-
 .bottom_banner_wrap {
   display: block;
   position: fixed;
@@ -2578,6 +2568,7 @@ textarea {
 
 .get_newdata_list > li {
   margin: 0 40px;
+  flex: 1;
 }
 
 .data_get_box {
@@ -2591,9 +2582,7 @@ textarea {
 .data_get_text {
   color: #fff;
   word-break: break-all;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
+  height: 104px;
   overflow: hidden;
   font-size: 22px;
   font-weight: 700;
@@ -2743,6 +2732,7 @@ textarea {
   .data_get_text {
     font-size: 17px;
     margin-top: 10px;
+    height: auto;
   }
   .data_get_btn {
     margin-top: 32px;
