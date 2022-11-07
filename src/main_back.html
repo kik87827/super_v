@@ -72,21 +72,29 @@
 				</div>
 				<div class="vitem_inner">
 					<!-- pc -->
-					<div class="pc_item">
-						<div class="pc_tongimg_wrap type2">
-							<div class="pc_media_item">
-								<img src="./images/mv_media_item.png" alt="">
-								<a href="https://cdndata.superv.com/promotion/main_1.mp4" target="_blank" class="btn_media_play"></a>
+					<div class="primary_screen_container pc_item">
+						<div class="pscreen_flex">
+							<div class="pscreen_shot">
+								<span class="primary_open_obj"></span>
+							</div>
+							<div class="pscreen_long">
+								<div class="primary_label"><img src="./images/main_primary_obj_01.png" alt=""></div>
+								<a href="javascript:;" class="primary_screen btn_player_call"><img src="./images/play_screen.png" alt=""></a>
+							</div>
+							<div class="pscreen_shot">
+								<span class="primary_open_obj"><img src="./images/mc_primary_mark.png" alt=""></span>
 							</div>
 						</div>
 					</div>
 					<!-- // pc -->
 					<!-- mobile -->
-					<div class="has_tongimg mb_item">
-						<div class="mb_media_item">
-							<img src="./images/mv_media_item_mb.jpg" alt="">
-							<a href="https://cdndata.superv.com/promotion/main_1.mp4" target="_blank" class="btn_media_play"></a>
+					<div class="primary_mb_item mb_item has_tongimg">
+						<div class="primary_mb_label">
+							<img src="./images/mobile_primary.png" alt="">
 						</div>
+						<a href="javascript:;" class="primary_mb_screen btn_player_call">
+							<img src="./images/mobile_primary_screen.png" alt="">
+						</a>
 					</div>
 					<!-- // mobile -->
 				</div>
@@ -95,7 +103,7 @@
 				<div class="vitem_inner">
 					<!-- pc -->
 					<div class="pc_item">
-						<div class="pc_tongimg_wrap type3">
+						<div class="pc_tongimg_wrap">
 							<img src="./images/pc_mvitem01.png" alt="">
 						</div>
 					</div>
@@ -175,7 +183,7 @@
 				<div class="get_data_zone">
 					<div class="get_newsdata_wrap">
 						<div class="copy_group">
-							<p class="copy_main"><span class="copy_color01">1위 교육 서비스를 만든</span> <br>최고 전문가들의 유아동 스마트러닝 &middot; <strong>슈퍼브이</strong></p>
+							<p class="copy_main">1위 교육 서비스를 만든 <br><strong>최고 전문가</strong>들의<br class="mb_item"> 유아동 스마트러닝</p>
 						</div>
 						<div class="get_newsdata_list_wrap">
 							<ul class="get_newdata_list">
@@ -239,27 +247,21 @@
 
 		<script>
 			$(function(){
-				// 퍼블확인용
-				let url = window.location.href.split('?')[1];
-				let url_2 = url !== undefined ? url.split('#')[0] : null;
-
-				if(url_2 === "layer_type"){
-					var itrame_url = "https://www.youtube-nocookie.com/embed/3kYAuRe4Atw?autoplay=1&mute=0&rel=0&controls=0";
-					$(".btn_media_play").on("click",function(e){
-						e.preventDefault();
-						$(".player_layer").addClass("active");
-						setTimeout(function(){
-							$("#media").attr("src",itrame_url);
-						},30);
-					});
-					$(".btn_player_close").on("click",function(e){
-						e.preventDefault();
-						$(".player_layer").removeClass("active");
-						setTimeout(function(){
-							$("#media").attr("src","");
-						},30);
-					});
-				}
+				var itrame_url = "https://www.youtube-nocookie.com/embed/3kYAuRe4Atw?autoplay=1&mute=0&rel=0&controls=0";
+				$(".btn_player_call").on("click",function(e){
+					e.preventDefault();
+					$(".player_layer").addClass("active");
+					setTimeout(function(){
+						$("#media").attr("src",itrame_url);
+					},30);
+				});
+				$(".btn_player_close").on("click",function(e){
+					e.preventDefault();
+					$(".player_layer").removeClass("active");
+					setTimeout(function(){
+						$("#media").attr("src","");
+					},30);
+				});
 				// $(".btn_player_call").trigger("click");
 			});
 		</script>

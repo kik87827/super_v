@@ -15,6 +15,7 @@ function mainBanner() {
   var bottom_banner_wrap = $(".bottom_banner_wrap");
   var header_add_obj_group = $(".header_add_obj_group");
   var footer_wrap = $(".footer_wrap");
+  var page_wrap = $(".page_wrap");
 
   $(window).on("scroll", function() {
     if ($(window).width() > 1550) {
@@ -37,9 +38,11 @@ function mainBanner() {
         "padding-bottom": bottom_banner_wrap.outerHeight()
       });
     } else {
-      page_wrap.css({
-        "padding-bottom": bottom_banner_wrap.outerHeight()
-      });
+      if(page_wrap.length){
+        page_wrap.css({
+          "padding-bottom": bottom_banner_wrap.outerHeight()
+        });
+      }
     }
   }
 }

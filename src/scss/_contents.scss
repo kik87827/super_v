@@ -31,7 +31,7 @@ input.stand_element{
         & + .stand_label{}
     }
 }
-.stand_label{display:inline-block;color:#3A3B50;font-size:12px;line-height:1;margin-left:10px;vertical-align:middle;cursor:pointer;}
+.stand_label{display:inline-block;color:#3A3B50;font-size:14px;line-height:1;margin-left:10px;vertical-align:middle;cursor:pointer;}
 .props_design_item{}
 input.props_design_element{
     display:inline-block;vertical-align:middle;cursor:pointer;flex:0 0 19px;width:19px;height:19px;background:#909090 url("../images/checkbox_input_small.png") no-repeat 0 0/100% auto;border-radius:100%;appearance: none;-webkit-appearance: none;-moz-appearance: none;-ms-appearance: none;
@@ -42,6 +42,12 @@ input.props_design_element{
 }
 .props_design_label{cursor:pointer;display:inline-block;font-size:12px;color:#3A3B50;margin-left:6px;font-weight:500;}
 
+.indent_para{display:flex;font-weight:700;margin-top:10px;}
+.indent_bullet{flex:0;white-space: nowrap;margin-right:5px;}
+.indent_text{flex:1; min-width:0;}
+
+.red_text{color:#E51F3F !important;}
+.red_text *{color:#E51F3F !important;;}
 
 input.dchk{
     display:inline-block;box-sizing:content-box;vertical-align:middle;cursor:pointer;flex:0 0 20px;width:20px;height:20px;background:url("../images/check_20x20.png") no-repeat 0 0/100% auto;border-radius:100%;appearance: none;-webkit-appearance: none;-moz-appearance: none;-ms-appearance: none;
@@ -390,7 +396,7 @@ input.formbox_element{
     margin-bottom:20px;
     &:last-of-type{margin-bottom:0;}
 }
-.agree_tail_scroll_zoe{height:120px;box-sizing:border-box;border:1px solid #D9D9D9;padding:18px 20px;color:#3A3B50;line-height:1.5;overflow-y:auto;overflow:overlay;}
+.agree_tail_scroll_zoe{height:90px;box-sizing:border-box;border:1px solid #D9D9D9;padding:18px 20px;color:#3A3B50;line-height:1.5;overflow-y:auto;overflow:overlay;}
 .term_item{
     margin-bottom:30px;
     &:last-of-type{margin-bottom:0;}
@@ -578,3 +584,6 @@ box-shadow: 4px 4px 15px 4px rgba(0,0,0,0.1);
     }
 }
 /* // design */
+
+.page_term_title_row{background:#000;padding:20px;}
+.page_term_title{font-size:20px;font-weight:700;color:#fff;}
