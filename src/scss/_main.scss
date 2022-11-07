@@ -155,13 +155,13 @@
 .primary_mb_screen{display:block;margin-top:3.200vw}
 .pc_tongimg_wrap{display:flex;align-items: flex-start;justify-content: center;font-size:0;line-height:0;padding:67px 30px;}
 .pc_tongimg_wrap.type3{align-items: center;}
-.pc_tongimg_wrap.type2{align-items: flex-start;justify-content: center;font-size:0;line-height:0;padding:80px 30px;}
+.pc_tongimg_wrap.type2{align-items: flex-start;justify-content: center;font-size:0;line-height:0;padding:0 30px 80px;}
 .pc_tongimg_wrap img{vertical-align: top;}
 
 .pc_media_item{position:relative;}
 .pc_media_item img{vertical-align: top;}
 
-.define_primary .pc_tongimg_wrap{min-height:664px;}
+.define_primary .pc_tongimg_wrap{min-height:750px;}
 .define_mv01 .pc_tongimg_wrap{min-height:890px;}
 .define_mv02 .pc_tongimg_wrap{min-height:890px;}
 .define_mv03 .pc_tongimg_wrap{min-height:890px;}
