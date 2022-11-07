@@ -2328,6 +2328,17 @@ textarea {
   vertical-align: top;
 }
 
+.bottom_banner_wrap.type2 {
+  text-align: center;
+  display: block;
+}
+
+.bottom_banner_wrap.type2 img {
+  max-width: 100% !important;
+  width: auto !important;
+  display: inline !important;
+}
+
 .primary_screen_container {
   max-width: 898px;
   margin: 0 auto;
